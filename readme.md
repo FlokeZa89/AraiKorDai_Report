@@ -13,7 +13,7 @@ Repository นี้มีไว้สําหรับการแจ้งบ
  >อัปโหลดรูปที่เว็บเก็บรูปแล้วแปะลิ้ง อย่างเช่น imger
 ## การแชร์ไอเดียต่างๆ
 
-หากคุณมีไอเดียที่อยากจะใส่ลงไปในบอท Arai Kor Dai ก็สามารถไปโพสต์  [Pull Requests](https://github.com/FlokeZa89/AraiKorDai_Report/pulls)
+หากคุณมีไอเดียที่อยากจะใส่ลงไปในบอท Arai Kor Dai ก็สามารถไปโพสต์  [Issue](https://github.com/FlokeZa89/AraiKorDai_Report/issues)
 ถ้าไอเดียถูกสนใจแล้วนักพัฒนานําไปใสในบอท ชื่อของคุณจะถูกใส่ไปใน **Update Log**
 
 ## คําสั่งต่างๆ ของบอท
