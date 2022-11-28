@@ -12,7 +12,7 @@ TOKEN = os.getenv("TOKEN")
 
 bot = interactions.Client(TOKEN)
 
-guild_ids = [798448521287434280,886087547393048627,1042753930536423424]
+guild_ids = [798448521287434280]
 
 def removemake(auid):
     rm = auid[auid.find('@')+1:auid.find('>')]
@@ -22,7 +22,7 @@ def removemake(auid):
 @bot.command(
     name="register",
     description="สมัครสมาชิกเพื่อเริ่มต้นใช้งาน",
-    scope=798448521287434280,
+    scope=guild_ids,
 )
 async def reg(ctx: interactions.CommandContext):
     status = database_worker.register(disid=ctx.member.user.id,disname=ctx.member.user.username)
@@ -43,7 +43,7 @@ async def getdiscordid(ctx: interactions.CommandContext):
 @bot.command(
     name="admin_reverse",
     description="Admin Tools: ย้อนกลับธุรกรรม",
-    scope=798448521287434280,
+    scope=guild_ids,
     options = [
         interactions.Option(
             name="trans_id",
@@ -67,7 +67,7 @@ async def reverse_transaction(ctx, trans_id: int):
 @bot.command(
     name="transfer",
     description="โอนเงินจากบัญชีของคุณไปยังบัญชีปลายทาง",
-    scope=798448521287434280,
+    scope=guild_ids,
     options = [
         interactions.Option(
             name="mention",
@@ -118,7 +118,7 @@ async def modal_response(ctx, response: str):
 @bot.command(
     name="point",
     description="เรียกดูยอดเงินคงเหลือ",
-    scope=798448521287434280,
+    scope=guild_ids,
 )
 async def data(ctx: interactions.CommandContext):
     data = database_worker.getdata(ctx.member.user.id)
@@ -133,7 +133,7 @@ async def data(ctx: interactions.CommandContext):
 
 @bot.command(
     name="โอนเงินเข้าบัญชีผู้ใช้นี้",
-    scope=798448521287434280,
+    scope=guild_ids,
     type=interactions.ApplicationCommandType.USER
 )
 async def transaction(ctx):
@@ -175,7 +175,7 @@ async def modal_response(ctx, response: str):
 @bot.command(
     type=interactions.ApplicationCommandType.USER,
     name="สะกิดผู้ใช้นี้ (5)",
-    scope=798448521287434280,
+    scope=guild_ids,
     
 )
 async def shake(ctx):
@@ -193,7 +193,7 @@ async def shake(ctx):
 @bot.command(
 name="profile",
 description="ดูโปรไฟล์ของคุณในเซิฟ",
-scope=[798448521287434280],
+scope=guild_ids,
 )
 async def embed(ctx: interactions.CommandContext):
     embed = interactions.Embed(timestamp=datetime.datetime.now(pytz.timezone('Asia/Bangkok')))
