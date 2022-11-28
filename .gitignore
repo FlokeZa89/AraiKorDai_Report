@@ -15,8 +15,8 @@ Icon
 # Thumbnails
 ._*
 
-/__pycache__/akd.cpython-310.pyc
-/__pycache__/database_worker.cpython-310.pyc
+__pycache__/akd.cpython-310.pyc
+__pycache__/database_worker.cpython-310.pyc
 
 # Files that might appear in the root of a volume
 .DocumentRevisions-V100
