@@ -28,4 +28,4 @@ Repository นี้มีไว้สําหรับการแจ้งบ
 `git clone https://github.com/FlokeZa89/AraiKorDai.git`
 
 - Requirement
- > discord-interaction , 
+ > discord-interaction , pymysql
