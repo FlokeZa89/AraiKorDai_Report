@@ -1,3 +1,5 @@
+# **OUT DATED PROJECT**
+
 # ยินดีต้อนรับสู่ Arai Kor Dai Repository (Hoshiko Project Bot) !
 Repository นี้มีไว้สําหรับการแจ้งบัค/นําเสนอฟีเจอร์ใหม่ๆ และประกาศฟีเจอร์ที่อัปเดต
 
